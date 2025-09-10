@@ -292,3 +292,103 @@ body {
   background-attachment: fixed !important;
   background-color: transparent !important; /* ilangin ungu sisa */
 }
+/* === RESET DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #2b124c;
+  padding: 10px 20px;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+/* === CONTAINER FLEX === */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+/* === KIRI: LOGO & TITLE === */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.brand-logos {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.brand-logos img {
+  height: 30px;
+  width: auto;
+}
+
+.logo {
+  font-size: 18px;
+  color: #ffe600;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/* === KANAN: NAVIGATION === */
+.nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  margin-left: auto; /* ❗ Dorong ke ujung kanan */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .brand-logos img {
+    height: 24px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+}
+
