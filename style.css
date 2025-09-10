@@ -303,6 +303,17 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* === RESET DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 /* === NAVBAR === */
 .navbar {
   background-color: #2b124c;
@@ -310,6 +321,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 1000;
+  overflow-x: auto; /* ❗ Cegah elemen hilang saat sempit */
 }
 
 /* === CONTAINER FLEX === */
@@ -319,16 +331,15 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
+  overflow-x: auto;
 }
 
-/* === KIRI: LOGO & TITLE === */
+/* === BRAND: LOGO & TITLE === */
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .brand-logos {
@@ -339,33 +350,32 @@ body {
 }
 
 .brand-logos img {
-  height: 30px;
+  height: 28px;
   width: auto;
 }
 
+/* === TULISAN MARSUD CUP === */
 .logo {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffe600;
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
-  margin-left: 10px;
 }
 
-/* === KANAN: NAVIGATION === */
+/* === MENU NAVIGASI === */
 .nav-links {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   list-style: none;
+  margin-left: auto; /* ❗ Dorong ke kanan */
   flex-shrink: 0;
-  justify-content: flex-end;
-  margin-left: auto; /* ❗ Dorong ke ujung kanan */
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   transition: color 0.3s ease;
 }
 
@@ -374,21 +384,22 @@ body {
 }
 
 /* === RESPONSIVE === */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .brand-logos img {
-    height: 24px;
+    height: 22px;
   }
 
   .logo {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .nav-links a {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .nav-links {
     gap: 10px;
   }
 }
+
 
