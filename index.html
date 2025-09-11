@@ -55,6 +55,37 @@
   </section>
 </header>
 
+<p id="eclipseText">
+  “ECLIPSE” merupakan kata yang diambil dari fenomena astronomi yang langka dan penuh makna: gerhana. Tema ini kami angkat sebagai cerminan dari perjalanan hidup para peserta didik, khususnya di jenjang SMA, yang tengah berada dalam masa transisi menuju kedewasaan.
+  <span id="dots">...</span><span id="more">
+    Latar belakang dari pemilihan tema ini berangkat dari pemahaman bahwa tidak semua masa terang berarti mudah, dan tidak semua masa gelap berarti akhir. Seperti halnya gerhana yang sesaat menutupi cahaya, masa-masa sulit dalam hidup remaja bukanlah hal yang harus dihindari, melainkan dimaknai sebagai bagian dari proses pembentukan diri yang utuh. 
+    Kami ingin para peserta didik SMP dan SMA se-JABODETABEK, khususnya dari SMA Marsudirini Bekasi, mampu memahami bahwa setiap tantangan adalah bagian dari perjalanan mereka menuju kedewasaan yang lebih kuat dan matang.
+    <br><br>
+    Acara Marsud Cup ini diharapkan menjadi ruang bagi para peserta untuk mengekspresikan potensi, keberanian, dan semangat mereka dalam menghadapi "gerhana" masing-masing baik itu dalam bentuk keraguan, kegagalan, atau ketakutan. 
+    Melalui berbagai perlombaan dan kegiatan, kami ingin memberikan kesempatan bagi mereka untuk bersinar di tengah kegelapan, menemukan jati diri, serta membangun rasa percaya diri dan solidaritas.
+  </span>
+  <a href="javascript:void(0);" id="readMoreLink">Read more</a>
+</p>
+
+<script>
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("more");
+  const readMoreLink = document.getElementById("readMoreLink");
+
+  readMoreLink.addEventListener("click", () => {
+    if (moreText.style.display === "inline") {
+      moreText.style.display = "none";
+      dots.style.display = "inline";
+      readMoreLink.textContent = "Read more";
+    } else {
+      moreText.style.display = "inline";
+      dots.style.display = "none";
+      readMoreLink.textContent = "Read less";
+    }
+  });
+</script>
+</body>
+  
   <!-- POSTER EVENT -->
   <div class="main-content">
     <section id="poster" class="section fade-in">
@@ -301,6 +332,7 @@
   </script>
 </body>
 </html>
+
 
 
 
