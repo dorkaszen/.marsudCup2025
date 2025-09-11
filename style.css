@@ -401,5 +401,17 @@ body {
     gap: 10px;
   }
 }
+html, body {
+  overflow-x: hidden;   /* supaya ga bisa geser kiri kanan */
+  width: 100%;          /* pastikan lebar full */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;       /* background biar sesuai layar */
+  background-repeat: no-repeat; /* ga ngulang */
+  background-position: center;  /* posisi tengah */
+}
 
 
