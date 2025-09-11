@@ -580,6 +580,31 @@ body {
   text-align: center;
   margin-top: 8px;
 }
+#eclipseText {
+  max-width: 750px;
+  margin: 20px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+  text-align: justify;
+}
+
+#readMoreLink {
+  color: #4CAF50; /* hijau biar kayak contoh */
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#readMoreLink:hover {
+  text-decoration: underline;
+}
+
+#more {
+  display: none;
+}
+
 
 
 
