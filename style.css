@@ -492,18 +492,28 @@ body {
   }
 }
 
+/* Biar nggak bisa geser kanan kiri */
 html, body {
-  overflow-x: hidden;   /* supaya ga bisa geser kiri kanan */
-  width: 100%;          /* pastikan lebar full */
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-body {
-  background-size: cover;       /* background biar sesuai layar */
-  background-repeat: no-repeat; /* ga ngulang */
-  background-position: center;  /* posisi tengah */
+/* Pastikan semua elemen tidak melebar keluar */
+* {
+  box-sizing: border-box;
 }
+
+/* Kalau ada container yang suka melebar */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Kalau ada section atau card yang bikin melebar */
+.section, .card-content, .info-card {
+  max-width: 100%;
+}
+
 
 
 
