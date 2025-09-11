@@ -497,11 +497,12 @@ body {
   background-position: center; /* posisi tengah */
   background-repeat: no-repeat;
   width: 100%;                /* biar responsif */
-  max-width: 400px;           /* batas lebar maksimal di laptop */
+  max-width: 200px;           /* batas lebar maksimal di laptop */
   height: 200px;              /* tinggi poster */
   margin: 0 auto;             /* biar center */
   border-radius: 12px;        /* opsional, biar ada sudut melengkung */
 }
+
 
 
 
