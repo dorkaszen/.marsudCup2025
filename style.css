@@ -520,6 +520,57 @@ body {
   display: block;
 }
 
+/* Logo animasi: slide dari atas */
+.event-logo {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: logoSlideDown 1.2s ease-out forwards;
+}
+
+@keyframes logoSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tulisan utama animasi: zoom-in */
+.animated-title {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: titleZoomIn 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* setelah logo */
+}
+
+@keyframes titleZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tagline animasi: muncul belakangan dengan kedip */
+.hero-content p {
+  opacity: 0;
+  animation: taglineFade 2s ease-in-out forwards;
+  animation-delay: 1.5s; /* muncul terakhir */
+}
+
+@keyframes taglineFade {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  70% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
 
 
 
