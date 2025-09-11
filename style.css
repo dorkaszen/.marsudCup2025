@@ -492,33 +492,6 @@ body {
   }
 }
 
-/* === FIX POSTER (biar nggak kegedean di laptop) === */
-.card-content {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;         /* ikut parent */
-  max-width: 400px;    /* batasi lebarnya */
-  height: 220px;       /* tinggi poster */
-  margin: 0 auto;      /* center */
-  border-radius: 12px; /* opsional */
-}
-
-/* === RESPONSIVE (opsional) === */
-@media (min-width: 768px) {
-  .card-content {
-    max-width: 500px;  /* di laptop lebih lebar */
-    height: 260px;
-  }
-}
-
-@media (max-width: 767px) {
-  .card-content {
-    max-width: 90%;    /* di HP hampir full tapi masih ada jarak */
-    height: 180px;
-  }
-}
-
 
 
 
