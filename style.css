@@ -512,6 +512,13 @@ body {
   opacity: 0.9;
   pointer-events: none;
 }
+.event-logo {
+  width: 200px;   /* kecilin ukuran logo */
+  max-width: 80%; /* biar tetap responsif */
+  height: auto;   /* biar proporsional */
+  margin: 0 auto; /* biar posisi tetap center */
+  display: block;
+}
 
 
 
