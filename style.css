@@ -503,6 +503,28 @@ body {
   border-radius: 12px;        /* opsional, biar ada sudut melengkung */
 }
 
+/* Biar nggak bisa geser kanan kiri */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Pastikan semua elemen tidak melebar keluar */
+* {
+  box-sizing: border-box;
+}
+
+/* Kalau ada container yang suka melebar */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Kalau ada section atau card yang bikin melebar */
+.section, .card-content, .info-card {
+  max-width: 100%;
+}
+
 
 
 
