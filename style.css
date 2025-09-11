@@ -707,6 +707,24 @@ body {
 #more {
   display: none;
 }
+#jadwal h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  font-size: 2.5rem; /* Sesuaikan dengan ukuran "Daftar Lomba" */
+  color: #FFD700; /* Warna kuning emas */
+  text-shadow: 0 0 10px #FFD700; /* Memberi efek glow seperti "Daftar Lomba" */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-details p {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 600;          /* agak tebal tapi tidak terlalu bold */
+  font-size: 1.2rem;         /* ukuran yang pas, bisa disesuaikan */
+  color: #ffffff;            /* warna kuning emas */
+  text-shadow: 0 0 5px #ffffff; /* glow lembut supaya nyambung sama judul */
+  margin: 5px 0;             /* beri jarak antar baris */
+}
 
 
 
