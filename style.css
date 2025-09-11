@@ -583,6 +583,9 @@ body {
 #eclipseText {
   max-width: 750px;
   margin: 20px auto;
+  font-fa#eclipseText {
+  max-width: 750px;
+  margin: 20px auto;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   line-height: 1.6;
@@ -604,6 +607,7 @@ body {
 #more {
   display: none;
 }
+
 
 
 
