@@ -492,6 +492,45 @@ body {
   }
 }
 
+html, body {
+  overflow-x: hidden;   /* supaya ga bisa geser kiri kanan */
+  width: 100%;          /* pastikan lebar full */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;       /* background biar sesuai layar */
+  background-repeat: no-repeat; /* ga ngulang */
+  background-position: center;  /* posisi tengah */
+}
+
+/* === FIX INFO CARDS === */
+.info-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;              /* ❌ jangan wrap */
+  justify-content: flex-start;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+  overflow-x: auto;               /* ✅ bisa geser kalau layar sempit */
+  -webkit-overflow-scrolling: touch; /* smooth scroll di iPhone */
+  scrollbar-width: thin;          /* Firefox */
+}
+
+.info-cards::-webkit-scrollbar {
+  height: 6px;                    /* kecilin scrollbar horizontal */
+}
+.info-cards::-webkit-scrollbar-thumb {
+  background: rgba(255, 215, 0, 0.6);
+  border-radius: 4px;
+}
+
+.info-card {
+  flex: 0 0 auto;                 /* ✅ biar ukurannya tetap */
+  width: 200px;
+  height: 200px;
+}
 /* styling maskot di dalam card */
 .card {
   position: relative;
@@ -513,11 +552,74 @@ body {
   pointer-events: none;
 }
 .event-logo {
-  width: 600px;   /* kecilin ukuran logo */
+  width: 450px;   /* kecilin ukuran logo */
   max-width: 80%; /* biar tetap responsif */
   height: auto;   /* biar proporsional */
   margin: 0 auto; /* biar posisi tetap center */
   display: block;
+}
+
+/* Navbar container */
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* pisahin brand di kiri, menu di kanan */
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo + tulisan */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* jarak logo dengan tulisan */
+}
+
+/* Menu list */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu link */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* HP view */
+@media (max-width: 768px) {
+  .nav-links {
+    margin-left: auto;       /* geser ke kanan */
+    justify-content: flex-end;
+  }
+
+  .nav-links li a {
+    font-size: 14px; /* biar muat di layar kecil */
+  }
+}
+
+/* Logo tulisannya */
+.logo {
+  font-size: 28px;  /* ukuran default di desktop */
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+/* HP view */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 8px;  /* kecilin pas HP */
+  }
+
+  .nav-links li a {
+    font-size: 14px; /* biar seimbang */
+  }
 }
 
 /* Logo animasi: slide dari atas */
@@ -580,10 +682,8 @@ body {
   text-align: center;
   margin-top: 8px;
 }
+
 #eclipseText {
-  max-width: 750px;
-  margin: 20px auto;
-  font-fa#eclipseText {
   max-width: 750px;
   margin: 20px auto;
   font-family: 'Montserrat', sans-serif;
@@ -607,6 +707,7 @@ body {
 #more {
   display: none;
 }
+
 
 
 
