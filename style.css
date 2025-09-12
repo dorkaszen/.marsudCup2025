@@ -830,6 +830,44 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Styling teks Filosofi Logo */
+#eclipseText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 900px;
+  margin: 40px auto;
+  color: #f8e9ff;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Highlight kata ECLIPSE */
+#eclipseText .highlight {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+
+/* Read more link */
+#readMoreLink {
+  display: inline-block;
+  margin-top: 15px;
+  color: #FFD700;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#readMoreLink:hover {
+  color: #FFA500;
+}
+
+
 
 
 
