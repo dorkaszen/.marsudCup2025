@@ -725,6 +725,16 @@ body {
   text-shadow: 0 0 5px #ffffff; /* glow lembut supaya nyambung sama judul */
   margin: 5px 0;             /* beri jarak antar baris */
 }
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
