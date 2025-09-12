@@ -867,6 +867,48 @@ body {
   color: #FFA500;
 }
 
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 20px;
+  margin-top: 60px;
+  color: #f8e9ff;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-thanks h3 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.3rem;
+  color: #FFD700;
+  margin: 0;
+}
+
+.sponsor-logos {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logos img {
+  height: 60px; /* bisa disesuaikan */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-logos img:hover {
+  transform: scale(1.1);
+}
+
 
 
 
