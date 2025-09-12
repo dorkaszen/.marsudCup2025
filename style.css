@@ -749,7 +749,7 @@ body {
   font-family: 'Cinzel Decorative', serif !important;
   font-weight: 700;
   text-transform: uppercase;
-  color: #FFD700;
+  color: #ffffff;
   text-shadow: 
     0 0 5px #FFD700,
     0 0 10px #FFD700,
@@ -774,6 +774,7 @@ body {
       0 0 60px #FF4500;
   }
 }
+
 
 
 
