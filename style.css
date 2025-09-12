@@ -735,6 +735,46 @@ body {
   transform: translateY(0);
 }
 
+/* Judul Informasi Penting tetap elegan tapi tanpa glow */
+#pendaftaran > h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFD700;
+}
+
+/* Isi kartu (Petunjuk Teknis & Contact Person) glowing */
+#pendaftaran .info-card span {
+  font-family: 'Cinzel Decorative', serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFD700;
+  text-shadow: 
+    0 0 5px #FFD700,
+    0 0 10px #FFD700,
+    0 0 20px #FFA500,
+    0 0 40px #FF8C00;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 5px #FFD700,
+      0 0 10px #FFD700,
+      0 0 20px #FFA500,
+      0 0 40px #FF8C00;
+  }
+  to {
+    text-shadow: 
+      0 0 10px #FFFACD,
+      0 0 20px #FFD700,
+      0 0 30px #FFA500,
+      0 0 60px #FF4500;
+  }
+}
+
 
 
 
