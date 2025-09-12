@@ -775,6 +775,61 @@ body {
   }
 }
 
+/* SECTION PERATURAN */
+#peraturan {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#peraturan h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.rules-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.rule-card {
+  background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,165,0,0.15));
+  border: 1px solid rgba(255,215,0,0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rule-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.rule-content {
+  padding: 25px 20px;
+}
+
+.rule-content h3 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.rule-content p {
+  font-size: 0.95rem;
+  color: #f1e6ff;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 
 
