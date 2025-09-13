@@ -775,61 +775,6 @@ body {
   }
 }
 
-/* SECTION PERATURAN */
-#peraturan {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#peraturan h2 {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #FFD700;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.rules-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-}
-
-.rule-card {
-  background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,165,0,0.15));
-  border: 1px solid rgba(255,215,0,0.3);
-  border-radius: 16px;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.rule-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
-}
-
-.rule-content {
-  padding: 25px 20px;
-}
-
-.rule-content h3 {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #FFD700;
-}
-
-.rule-content p {
-  font-size: 0.95rem;
-  color: #f1e6ff;
-  font-family: 'Montserrat', sans-serif;
-}
-
 /* Styling teks Filosofi Logo */
 #eclipseText {
   font-family: 'Montserrat', sans-serif;
@@ -908,18 +853,41 @@ footer {
 .sponsor-logos img:hover {
   transform: scale(1.1);
 }
-/* Judul di kartu lomba */
-.lomba-card h3 {
-  font-family: 'Cinzel Decorative', serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #FFD700;
-  letter-spacing: 1px;
+
+/* Guidebook Section */
+#guidebook {
   text-align: center;
-  margin-bottom: 10px;
+  padding: 60px 20px;
 }
 
+#guidebook h2 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
 
+.guidebook-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #1a1a1a;
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.guidebook-btn:hover {
+  background: linear-gradient(135deg, #FFA500, #FFD700);
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
 
 
 
