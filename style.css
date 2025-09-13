@@ -867,7 +867,7 @@ footer {
 }
 
 #readMoreLink {
-  color: #4CAF50; /* hijau biar kayak contoh */
+  color: #ffffff; /* hijau biar kayak contoh */
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -880,6 +880,7 @@ footer {
 #more {
   display: none;
 }
+
 
 
 
