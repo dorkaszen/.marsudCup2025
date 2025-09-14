@@ -288,7 +288,7 @@ footer {
 
 /* === FIX LOGO SECTION === */
 body {
-  background: url("iyakli.jpeg") no-repeat center/cover !important;
+  background: url("background.jpeg") no-repeat center/cover !important;
   background-attachment: fixed !important;
   background-color: transparent !important; /* ilangin ungu sisa */
 }
@@ -880,6 +880,7 @@ footer {
 #more {
   display: none;
 }
+
 
 
 
