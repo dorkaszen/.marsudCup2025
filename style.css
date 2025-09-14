@@ -75,7 +75,7 @@ nav a:hover {
 /* Hero */
 .hero {
   height: 100vh;
-  background: url("hero-bg.jpeg") no-repeat center/cover;
+  background: url("background.jpeg") no-repeat center/cover;
   display: flex; justify-content: center; align-items: center;
   text-align: center; padding-top: 70px;
   position: relative;
@@ -880,6 +880,7 @@ footer {
 #more {
   display: none;
 }
+
 
 
 
