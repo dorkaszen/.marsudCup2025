@@ -913,6 +913,11 @@ footer {
   transform: scale(1.1);
 }
 
+.kahf-logo {
+  height: 80px; /* bisa kamu sesuaikan misalnya 75–85px biar pas */
+}
+
+
 
 
 
