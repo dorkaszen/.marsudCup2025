@@ -917,6 +917,14 @@ footer {
   height: 100px; /* bisa kamu sesuaikan misalnya 75–85px biar pas */
 }
 
+.kahf-logo {
+  height: 90px;
+  width: 90px; /* bikin area logo sama besar */
+  object-fit: contain;
+  background-color: transparent;
+}
+
+
 
 
 
