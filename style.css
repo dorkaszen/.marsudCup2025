@@ -903,14 +903,16 @@ footer {
 }
 
 .sponsor-logos img {
-  height: 60px; /* sesuaikan ukuran */
+  height: 70px; /* samain tinggi semua logo */
   width: auto;
+  object-fit: contain; /* jaga proporsi biar ga gepeng */
   transition: transform 0.3s ease;
 }
 
 .sponsor-logos img:hover {
   transform: scale(1.1);
 }
+
 
 
 
