@@ -913,16 +913,24 @@ footer {
   transform: scale(1.1);
 }
 
-.kahf-logo {
-  height: 100px; /* bisa kamu sesuaikan misalnya 75–85px biar pas */
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.kahf-logo {
-  height: 90px;
-  width: 90px; /* bikin area logo sama besar */
+.sponsor-logos img {
+  height: 80px;
+  width: auto;
   object-fit: contain;
-  background-color: transparent;
 }
+
+/* kecilin logo by.U dikit biar seimbang sama Kahf */
+.byu-logo {
+  height: 65px;
+}
+
 
 
 
