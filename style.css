@@ -960,44 +960,79 @@ footer {
   transition: transform 0.2s ease;
 }
 
+.footer-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.footer-thanks h3 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f2c744; /* warna teks bisa disesuaikan */
+}
+
+/* Grid sponsor utama */
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Gaya logo */
+.sponsor-logos img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0.95);
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+/* Hover efek */
 .sponsor-logos img:hover {
   transform: scale(1.08);
   filter: brightness(1.1);
 }
 
-@media (max-width: 600px) {
+/* Logo khusus (kalau mau disesuaikan) */
+.byu-logo {
+  width: 80px;
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+  .sponsor-logos {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 15px;
+  }
+
   .sponsor-logos img {
-    max-width: 70px;
+    width: 70px;
+  }
+
+  .footer-thanks h3 {
+    font-size: 18px;
   }
 }
-.sponsor-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
-  align-items: center;
-  justify-items: center;
-  padding: 20px;
+
+@media (max-width: 480px) {
+  .sponsor-logos {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 12px;
+  }
+
+  .sponsor-logos img {
+    width: 60px;
+  }
 }
-
-.sponsor-logos img {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-  transition: transform 0.2s ease-in-out;
-}
-
-.sponsor-logos img:hover {
-  transform: scale(1.05);
-}
-
-
-
-
-
-
-
-
-
 
 
 
