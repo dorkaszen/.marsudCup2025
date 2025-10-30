@@ -930,6 +930,47 @@ footer {
 .byu-logo {
   height: 100px;
 }
+.footer-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.footer-thanks h3 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sponsor-logos img {
+  max-width: 100px;
+  height: auto;
+  filter: brightness(0.95);
+  transition: transform 0.2s ease;
+}
+
+.sponsor-logos img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 600px) {
+  .sponsor-logos img {
+    max-width: 70px;
+  }
+}
+
 
 
 
