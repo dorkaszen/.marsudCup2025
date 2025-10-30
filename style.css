@@ -970,6 +970,26 @@ footer {
     max-width: 70px;
   }
 }
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.sponsor-logos img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sponsor-logos img:hover {
+  transform: scale(1.05);
+}
+
 
 
 
