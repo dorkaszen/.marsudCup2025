@@ -1034,6 +1034,51 @@ footer {
   }
 }
 
+.ticket-section {
+  background: url('background.jpg') no-repeat center center/cover; /* ganti dengan gambar background kamu */
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.ticket-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px 60px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.ticket-title {
+  font-family: 'Cinzel', serif; /* kamu bisa ganti dengan font lain kalau mau */
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 0 8px #FFD700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.ticket-btn {
+  background: #FFC107;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3b2c00;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.ticket-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
 
 
 
