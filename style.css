@@ -1035,7 +1035,7 @@ footer {
 }
 
 .ticket-section {
-  background: url('background.jpg') no-repeat center center/cover; /* ganti dengan gambar background kamu */
+  background: url('background.jpg') no-repeat center center/cover; /* ganti background sesuai kebutuhan */
   height: 300px;
   display: flex;
   justify-content: center;
@@ -1052,7 +1052,7 @@ footer {
 }
 
 .ticket-title {
-  font-family: 'Cinzel', serif; /* kamu bisa ganti dengan font lain kalau mau */
+  font-family: 'Cinzel', serif;
   font-size: 36px;
   font-weight: 700;
   color: #FFD700;
@@ -1062,6 +1062,7 @@ footer {
 }
 
 .ticket-btn {
+  display: inline-block;
   background: #FFC107;
   border: none;
   border-radius: 30px;
@@ -1069,6 +1070,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   color: #3b2c00;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
   transition: all 0.3s ease;
@@ -1078,6 +1080,7 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.5);
 }
+
 
 
 
